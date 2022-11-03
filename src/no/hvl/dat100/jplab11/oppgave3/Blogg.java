@@ -40,10 +40,12 @@ public class Blogg {
 	}
 
 	public boolean finnes(Innlegg innlegg) {
+		boolean finnes = false;
 		if (finnInnlegg(innlegg) == -1)
-			return false;
+			finnes = false;
 		else
-			return true;
+			finnes = true;
+		return finnes;
 	}
 
 	public boolean ledigPlass() {
