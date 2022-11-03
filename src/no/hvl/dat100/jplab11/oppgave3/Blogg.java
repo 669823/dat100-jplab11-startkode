@@ -69,11 +69,11 @@ public class Blogg {
 	}
 
 	public String toString() {
-		String s = getAntall() + "\n";
+		String str = getAntall() + "\n";
 		for (int i = 0; i < nesteledig; i++) {
-			s += innleggtabell[i].toString();
+			str += innleggtabell[i].toString();
 		}
-		return s;
+		return str;
 	}
 
 	// valgfrie oppgaver nedenfor
